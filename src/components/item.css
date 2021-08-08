@@ -1,0 +1,66 @@
+
+
+.item {
+    display: inline-block;
+    width: 250px;
+    height:350px;
+    background-color: rgb(255, 255, 255);
+    border: 280px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    padding: 10px;
+}
+
+.item h5 {
+    color: rgb(27, 27, 27);
+    font-weight: 300;
+    margin-bottom:20px;
+}
+
+.quantityPicker button:hover{
+    color: white;
+    cursor:pointer;
+}
+
+.item label span {
+    color: rgb(27, 27, 27);
+    font-weight: 200; 
+}
+.item img {
+    width: 200px;
+    height: 190px;
+    margin-bottom:10px;
+}
+
+.quantityPicker .plus-minus-btn {
+   margin:0px 10px 20px 10px;
+   padding: 3px 10px;
+   font-weight: 200;
+   font-size:20px;
+   border: 5px;
+   border-radius: 6px;
+   background-color: rgb(219, 219, 219);
+   
+}
+
+
+
+.priceContain {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.btnContainer{
+    margin-top: 10px;
+}
+
+
+.checkOut {
+    font-size: 20px;
+}
+
+.btnContainer i:hover {
+    color:  rgb(134, 200, 226);
+    cursor: pointer;
+}
