@@ -6,7 +6,7 @@ var catalog = [     //create products total 9
     price: 15.99,
     stock: 13,
     image: "boardShorts.jpeg",//from product folder in public
-    discount: 5,
+    discount: 2.99,
     minimum: 1,
 },
 {
@@ -16,7 +16,7 @@ var catalog = [     //create products total 9
     price: 10.00,
     stock: 18,
     image:"blackShirt.jpeg",
-    discount: 10,
+    discount: 3.00,
     minimum: 1,
 },
 {
@@ -36,7 +36,7 @@ var catalog = [     //create products total 9
     price: 8.99,
     stock: 17,
     image:"longSleeve.jpeg",
-    discount: 5,
+    discount: 2.99,
     minimum: 1, 
 },
 {
@@ -56,7 +56,7 @@ var catalog = [     //create products total 9
     price: 5.99,
     stock: 20,
     image:"tankTop.jpeg",
-    discount: 5,
+    discount: 0,
     minimum: 1,
 },
 {
@@ -76,7 +76,7 @@ var catalog = [     //create products total 9
     price: 6.99,
     stock: 20,
     image:"redShorts.jpeg",
-    discount: 5,
+    discount: 1.00,
     minimum: 1,
 },
 {
@@ -86,7 +86,7 @@ var catalog = [     //create products total 9
     price: 30.00,
     stock: 15,
     image:"glasses.jpeg",
-    discount: 10,
+    discount: 5.00,
     minimum: 1,
 },
 

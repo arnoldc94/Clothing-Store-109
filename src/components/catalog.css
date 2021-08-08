@@ -17,6 +17,10 @@ background-color: rgb(134, 200, 226);
     }
 }
 
+.discountNote {
+    color:red;
+}
+
 .filterButtons {
     margin-bottom: 50px;
     margin-top:50px;
