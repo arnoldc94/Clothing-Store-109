@@ -5,19 +5,31 @@
 .admin-page h3 {
     text-align: center;
     margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 2rem;
+    background-color:  rgb(134, 200, 226);
 }
 
-.admin-page .form-control {
-    margin-bottom: 13px;
+
+.admin-page .form-container {
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+    padding-bottom: 20px;
+    align-items: center;
+    
 }
 
-.admin-page .form-control label {
-    display: inline-block;
-    width: 120px;
-    text-align: right;
-    margin-right: 7px;
+.form-container label {
+    font-size: 20px;
+}
+.form-container input {
+    width: 300px;
+    height: 30px;
 }
 
-admin-page .form-control input {
-    width: 230px;
+.form-container button {
+    border-radius: 5px;
+    border: 1px solid rgb(134, 200, 226);
 }

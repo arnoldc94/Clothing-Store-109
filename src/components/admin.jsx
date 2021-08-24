@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import"./about.css";
+import"./admin.css";
 import ItemService from "../services/itemService";
 
 class Admin extends Component {
@@ -22,37 +22,37 @@ class Admin extends Component {
 
                 {this.state.showAlert ? <div>Item Saved</div> : null}
 
-                <div className="form-control">
+                <div className="form-container">
                     <label>Title</label>
                     <input type="text" name="title" value={this.state.title} onChange={this.handleInputChange}/>  
                 </div>
 
-                <div className="form-control">
+                <div className="form-container">
                     <label>Category</label>
                     <input type="text" name = "category" value={this.state.category} onChange={this.handleInputChange} />
                 </div>
 
-                <div className="form-control">
+                <div className="form-container">
                     <label>Price</label>
                     <input type="text" name = "price" vlaue={this.state.price} onChange={this.hadleInputChange} /> 
                 </div>
 
-                <div className="form-control">
+                <div className="form-container">
                     <label>Discount</label>
                     <input type="text" name="discount" value={this.state.discount} onChange={this.handleInputChange} /> 
                 </div>
 
-                <div className="form-control">
+                <div className="form-container">
                     <label>Stock</label>
                     <input type="text" name="stock" value={this.state.stock} onChange={this.handleInputChange} />
                 </div>
 
-                <div className="form-control">
+                <div className="form-container">
                     <label>Minimum</label>
                     <input type="text" name="minimum" value={this.state.minimum} onChange={this.handleInputChange}/>
                 </div>
 
-                <div className="form-control">
+                <div className="form-container">
                     <button onClick={this.handleSave}>Register</button>
                 </div>
                 
@@ -80,7 +80,7 @@ class Admin extends Component {
 
 
         //clear the input
-        this.setState({ title: "", category: "", price: "", discount: "", stock: "", minimum: "", showAlert: true});
+        this.setState({ title: "", category: "", price: "", discount: "", stock: "", minimum: "", showAlert: "true"});
 
         // set a time out and hide the alert
         setTimeout(() => { 
