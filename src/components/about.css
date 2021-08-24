@@ -1,0 +1,28 @@
+.about-page {
+    
+    height:100vh;
+}
+
+.aboutHeader h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 2rem;
+    background-color:  rgb(134, 200, 226);
+}
+
+.body-about ul li{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    list-style-type: none;
+    margin: 20px 400px 20px 400px;
+    
+}
+
+
+.coming-soon {
+    border: 1px solid red;
+    border-radius: 8px;
+}
+

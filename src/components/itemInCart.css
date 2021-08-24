@@ -1,0 +1,26 @@
+.item-in-cart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #e9ecef;
+    border: 1px solid #666;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.item-in-cart img {
+    height: 120px;
+    flex: 1;
+}
+
+.item-in-cart label {
+    flex: 2;
+}
+
+.item-in-cart .item-info {
+    flex: 4;
+}
+.item-in-cart button{
+    flex: 1;
+}
+

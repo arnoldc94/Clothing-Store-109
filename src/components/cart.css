@@ -1,0 +1,18 @@
+.cart-page {
+    
+    height:100vh;
+    flex:4;
+
+}
+
+.cartHeader h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 2rem;
+    background-color:  rgb(134, 200, 226);
+}
+
+.cart-page .total-container {
+    flex:1;
+}

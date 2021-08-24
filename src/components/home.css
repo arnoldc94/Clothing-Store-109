@@ -1,0 +1,15 @@
+
+
+
+.home-page {
+    
+    height:100vh;
+}
+
+.homeHeader h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 2rem;
+    background-color:  rgb(134, 200, 226);
+}

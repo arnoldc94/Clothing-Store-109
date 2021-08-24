@@ -9,45 +9,98 @@
 }
 
 .navbar h1 {
-    font-size: 30px;
-    font-family:cursive;
-    font-weight:200px;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:black;
+    padding-left: 225px;
+    
 }
 
 
-.navbar i{
-    margin:20px;
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+.titleCheckout{
+    display: flex;
+    flex-direction: row;
+}
+.cart {
+ color:black;
+ text-decoration: none;
+ 
+ 
 }
 
-.navbar i:hover {
+.cart:hover {
+    color:  rgb(134, 200, 226);
+    cursor: pointer;
+}
+.flexBox {
+    padding-left: 200px;
+}
+.flexBox i{
+    font-size: 25px;
+}
+
+.cartCounter{
+    font-size: 30px;
+    padding-left: 10px;
+    text-decoration: none;
+    
+}
+
+.navLinks a{
+    font-size: 25px;
+    font-weight: 50px;
+    color:black;
+    text-decoration: none;
+    padding-left: 2px;
+
+}
+.navLinks a:hover{
     color:  rgb(134, 200, 226);
     cursor: pointer;
 }
 
-.expandBar {
-    color: black;
-    font-size: 20px;
-}
-.checkOut{
-    color: black;
-}
 
 @media(max-width: 767px){
     .navbar h1{
-        font-size: 25px;
+        font-size: 20px;
+        padding-left: 100px;
+        
+    }
+    .navLinks Link {
+        display: flex;
+        flex-direction: column;
     }
     .flexBox i{
        font-size: 30px;
+       padding-left: 15px;
+    }
+    .cartCounter {
+        padding-right: 3px;
     }
 
 }
- @media(max-width: 360px){
+ @media(max-width: 375px){
     .navbar h1{
         font-size: 15px;
     }
     .flexBox i{
        font-size: 20px;
+    }
+
+    @media(max-width: 320px){
+        .navbar h1{
+            padding-left: 2px;
+        }
+        .flexBox i{
+            font-size: 20px;
+        }
+        .cartCounter{
+            font-size: 20px;
+        }
     }
 
  }

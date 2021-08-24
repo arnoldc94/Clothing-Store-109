@@ -3,10 +3,12 @@ import QuantityPicker from './quantityPicker';
 import { FaShoppingCart } from "react-icons/fa";
 
 import "./item.css";
+import storeContext from '../store/storeContext';
 
 
 
 class Item extends Component {
+    static contextType = storeContext;
     state = { quantity: 1 }
     render() { 
         return ( 
@@ -25,7 +27,7 @@ class Item extends Component {
                     </div>
                     
                     <div className="btnContainer">
-                        <i className="checkOut"><FaShoppingCart/></i>  
+                        <i onClick={this.handleAddProductToCart} className="checkOut"><FaShoppingCart/></i>  
                     </div>
                 </div>
                 
@@ -33,8 +35,9 @@ class Item extends Component {
          );
     }
     
+
     displayDiscount = () => {
-        let discount = (this.props.data.discount.toFixed(2));
+       this.props.data.discount.toFixed(2);
         
     }
 
@@ -48,6 +51,15 @@ class Item extends Component {
         console.log("quantity changed", quantity);
         this.setState({quantity:quantity});
     }
+    handleAddProductToCart = () => {
+        // create the object
+        let prod = {
+            ...this.props.data, //<- item information
+            quantity: this.state.quantity,
+        };
+
+        this.context.addProductToCart(prod);
+    };
 }
  
 export default Item;

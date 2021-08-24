@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import"./catalog.css";
-import Item from "./item.jsx";
+import Item from "./item";
 import ItemService from "../services/itemService.js";
 
 

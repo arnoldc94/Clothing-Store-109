@@ -1,0 +1,23 @@
+.admin-page {
+    height: 100vh;
+}
+
+.admin-page h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-page .form-control {
+    margin-bottom: 13px;
+}
+
+.admin-page .form-control label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 7px;
+}
+
+admin-page .form-control input {
+    width: 230px;
+}
