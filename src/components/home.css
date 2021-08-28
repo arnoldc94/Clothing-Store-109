@@ -13,3 +13,39 @@
     font-size: 2rem;
     background-color:  rgb(134, 200, 226);
 }
+
+.h2Home {
+    width: 100%;
+    
+}
+
+.surfImg {
+    height: 50vh;
+    width: 100%;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    margin-top: 30px;
+}
+
+.catalogLink {
+    height: 10vh;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    color: black;
+    border: .5px solid rgb(134, 200, 226);
+    border-radius: 6px;
+}
+
+.catalogLink:hover {
+    cursor: pointer;
+    color:rgb(134, 200, 226);
+}
+.pageBreak {
+    padding-top: 20px;
+    padding-Bottom: 50px;
+}
+.beachImg {
+    width: 25%;
+    height: 30vh;
+   
+}

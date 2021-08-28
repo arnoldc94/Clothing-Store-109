@@ -21,6 +21,7 @@ class GlobalState extends Component {
     }
     addProductToCart = (product) => {
         let currentCart = [...this.state.cart]; // hard copy of array
+        
         let found = false;
         for(let i=0; i < currentCart.length; i++) {
             let item = currentCart[i];
@@ -38,7 +39,20 @@ class GlobalState extends Component {
     };
 
     removeProductFromCart = (productId) => {
-        
+        let copy = [...this.state.cart];
+
+        for(let i = 0; i < copy.length; i++) {
+            let item = copy[i];
+
+            if(item._id === productId) {
+                copy.splice(i, 1);
+                break;
+            }
+        }
+        this.setState({ cart: copy});
+
+      
+
     };
 }
  

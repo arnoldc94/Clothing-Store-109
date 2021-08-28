@@ -1,3 +1,5 @@
+import axios from "axios";
+
 var catalog = [     //create products total 9
 {
     _id: "boardShorts",
@@ -95,16 +97,21 @@ var catalog = [     //create products total 9
 
 class ItemService {
     
-    getCatalog() {
+    async getCatalog() {
         // logic to call server
         // and retreive an array of products
+        let response = await axios.get('http://127.0.0.1:5000/api/catalog');
+        return response.data;
 
         // return mock data
-        return catalog;
+        // return catalog;
+
     }
 
-    saveItem(item) {
+    async saveItem(item) {
         console.log("Todo: send object to server");
+
+        await axios.post("http://127.0.0.1:5000/api/catalog", item);
     }
 
     getItemDetails(id) {

@@ -1,16 +1,22 @@
 .item-in-cart {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 95%;
     background-color: #e9ecef;
     border: 1px solid #666;
     border-radius: 6px;
     padding: 0 15px;
+    margin: 30px 30px 30px 30px;
+    
 }
 
 .item-in-cart img {
+    width: 80px;
     height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     flex: 1;
+    
 }
 
 .item-in-cart label {
@@ -22,5 +28,12 @@
 }
 .item-in-cart button{
     flex: 1;
+    border: 1px solid rgb(134, 200, 226);
+    border-radius: 6px;
+
+}
+
+.item-in-cart button:hover {
+    color: rgb(134, 200, 226);;
 }
 

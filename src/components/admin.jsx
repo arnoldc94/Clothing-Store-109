@@ -16,11 +16,15 @@ class Admin extends Component {
         showAlert: false,
      }
     render() { 
+        let alertStatus = this.state.showAlert ? "" : "hide";
         return ( 
             <div className="admin-page">
                 <h3>Register New Product</h3>
 
-                {this.state.showAlert ? <div>Item Saved</div> : null}
+                {/*this.state.showAlert ? <div>Item Saved</div> : null*/}
+                <div id="test" className={"alert alert-success " + alertStatus}>
+                    Another Alert Saved
+                </div>
 
                 <div className="form-container">
                     <label>Title</label>
@@ -33,8 +37,13 @@ class Admin extends Component {
                 </div>
 
                 <div className="form-container">
+                    <label>Image Name</label>
+                    <input type="text" name="image" value={this.state.image} onChange={this.handleInputChange} />
+                </div>
+
+                <div className="form-container">
                     <label>Price</label>
-                    <input type="text" name = "price" vlaue={this.state.price} onChange={this.hadleInputChange} /> 
+                    <input type="text" name = "price" vlaue={this.state.price} onChange={this.handleInputChange} /> 
                 </div>
 
                 <div className="form-container">
@@ -68,26 +77,28 @@ class Admin extends Component {
         this.setState({ [event.target.name]: event.target.value });
     };
 
-    handleSave = () => {
+    handleSave = async () => {
 
         // create an object
         let item = {...this.state}; // hard copy // deep copy // deep clone
-        console.log(item);
+        item.price = item.price * 1;
+        item.stock = +item.stock;
+        item.minimum = parseInt(item.minimum);
 
         // send the object to a servive -> to server
         let service = new ItemService();
-        service.saveItem(item);
+        await service.saveItem(item);
 
 
         //clear the input
-        this.setState({ title: "", category: "", price: "", discount: "", stock: "", minimum: "", showAlert: "true"});
+        this.setState({ title: "", category: "", price: 0, discount: 0, stock: 0, minimum: 1, showAlert: true});
 
         // set a time out and hide the alert
         setTimeout(() => { 
-            this.setState({showAlert: false});
+            this.setState({ showAlert: false });
             },2500);
 
     };
-}// end class
+}
  
 export default Admin;

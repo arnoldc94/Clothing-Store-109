@@ -7,29 +7,35 @@ import ItemInCart from "./itemInCart";
 
 class Cart extends Component {
     static contextType = storeContext;
-    state = {  };
+    state = {};
     render() { 
         
         return ( 
             
             <div className="cart-page">
                 <div className="cartHeader">
-                   <h1>your items</h1> 
+                   <h1>Your Items</h1> 
+                </div>
+                <div className="countTotalContainer">
+                    <div className="productCount">
+                        <h5>You have {this.context.cart.length} Products in Your Cart</h5>
+                    </div>
+                    
+                    <div className="totalContainer">
+                        <label>Your Total:</label>
+                        <h6>$ {this.getTotal()}</h6>
+
+                        <button className = "paymentButton">Proceed to Payment</button>
+                    </div> 
                 </div>
                 
-                <h5>You have {this.context.cart.length} items in your cart</h5>
                 <div className="cart-container">
                     { this.context.cart.map((prod) => (
-                        <ItemInCart key={prod._id} data = {prod}></ItemInCart>
+                        <ItemInCart key={prod._id} data={prod}></ItemInCart>
                     ))}
                 </div>
 
-                <div className="totalContainer">
-                    <label>Your Total</label>
-                    <h6>{this.getTotal()}</h6>
-
-                    <button className = "btn btn-primary">Proceed to Payment</button>
-                </div>
+              
             </div>
             
             
@@ -39,7 +45,7 @@ class Cart extends Component {
         let total = 0;
         for(let i=0; i<this.context.cart.length;i++) {
             let item = this.context.cart[i];
-            total += item.price * item.quantity;
+            total += (item.price * item.quantity) - item.discount;
         }
 
         return total.toFixed(2);

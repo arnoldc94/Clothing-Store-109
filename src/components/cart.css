@@ -5,6 +5,8 @@
 
 }
 
+
+
 .cartHeader h1 {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -13,6 +15,35 @@
     background-color:  rgb(134, 200, 226);
 }
 
+.countTotalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+
+
+.cart-page h5 {
+    margin-top: 30px;
+}
+
 .cart-page .total-container {
     flex:1;
+}
+.cart-container {
+    height:60vh;
+    overflow-y: auto;
+}
+
+.paymentButton {
+    padding: 5px 5px 5px 5px;
+    border: .5px solid rgb(134, 200, 226);
+    border-radius: 6px;
+}
+
+.paymentButton:hover {
+    color: rgb(134, 200, 226);
 }

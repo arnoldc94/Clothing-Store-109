@@ -46,17 +46,17 @@ class Catalog extends Component {
         this.setState({filter: "" });
     }
     filterByCat = (cat) => {
-        this.setState({filter: cat});
+        this.setState({ filter: cat });
     }
     // best place to load data from server
     // executed after the initial render
-    componentDidMount() {
+    async componentDidMount() {
         let service = new ItemService();
-        let data = service.getCatalog();
+        let data = await service.getCatalog();
 
         let categories = [];
         for(let i =0; i<data.length;i++){
-            let category =data[i].category;
+            let category = data[i].category;
 
             if(!categories.includes(category)){
 
