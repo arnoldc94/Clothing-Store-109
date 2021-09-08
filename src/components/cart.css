@@ -23,7 +23,29 @@
     
 }
 
+.totalContainer {
+    display: flex;
+    flex-direction: column;
+}
 
+.coupon {
+    text-align: center;
+}
+
+.couponBtn {
+    padding: 5px 5px 5px 5px;
+    border: .5px solid rgb(134, 200, 226);
+    border-radius: 6px;
+}
+
+.inputCoupon,
+.submitCoupon,
+.total,
+.submitOrder {
+    padding-bottom: 8px;
+    padding-top: 10px;
+    
+}
 
 
 .cart-page h5 {

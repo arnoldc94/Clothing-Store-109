@@ -30,6 +30,9 @@ class  NavBar extends Component {
                 <Link to="/catalog">Catalog</Link>
               </div>
               <div>
+                <Link to="/purchase-history">Orders</Link>
+              </div>
+              <div>
                 <Link to="/admin">Admin</Link>
               </div>
                 

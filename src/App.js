@@ -13,6 +13,8 @@ import Home from "./components/home";
 import About from "./components/about";
 import Admin from "./components/admin";
 import Cart from "./components/cart";
+import HistoryPurchase from "./components/history";
+import OrderSaved from "./components/orderSaved";
 import GlobalState from './store/globalCotext';
 
 
@@ -33,6 +35,8 @@ function App() {
             <Route path="/about" exact component={About}></Route>
             <Route path="/admin" exact component={Admin}></Route>
             <Route path="/cart" exact component={Cart}></Route>
+            <Route path="/order-saved" exact component={OrderSaved}></Route>
+            <Route path="/purchase-history" exact component={HistoryPurchase}></Route>
           </Switch>
           
           <Footer></Footer>

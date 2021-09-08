@@ -20,7 +20,7 @@ class Home extends Component {
                 <img className="surfImg" src="./images/surf.jpeg" alt="Beach" />
                 <div>
                     <div>
-                        <h1></h1>
+                        
                         <p></p>
                         <div className="pageBreak">
                             <Link className="catalogLink" to="/catalog">

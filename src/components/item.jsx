@@ -22,7 +22,7 @@ class Item extends Component {
                 <div className="flexContain">
                     <div className="priceContain">
                         <label className="price"><span>Price: </span>${ this.props.data.price.toFixed(2) }</label>
-                        <label className="discount"><span>Discount: </span>${ this.props.data.discount.toFixed(2) }</label>
+                        
                         <label className="total"><span>Total: </span>${ this.getTotal() }</label>
                     </div>
                     

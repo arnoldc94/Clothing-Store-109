@@ -19,7 +19,7 @@ class ItemInCart extends Component {
                 <label>Quantity: {this.props.data.quantity}</label>
                 <label>Total: {this.props.data.price.toFixed(2)}</label>
                 
-                <button onClick={this.handleDelete} className="deleteBtn" onClick={this.handleDelete}>Remove</button>
+                <button onClick={this.handleDelete} className="deleteBtn" >Remove</button>
             </div>
          );
     }

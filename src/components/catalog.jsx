@@ -26,7 +26,6 @@ class Catalog extends Component {
                 </div>
                 
                 <h5>We have { this.state.catalog.length } products for you</h5>
-                <div className = "discountNote">* All discounts are taken off the total not the individual item * </div>
 
                 <div className="filterButtons">
                     <button className="buttonShow" onClick={this.clearFilter}>Show All</button>

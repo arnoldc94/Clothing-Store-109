@@ -1,0 +1,36 @@
+.orderPlacedContainer {
+    height: 35vh;
+
+}
+
+.bodyBorder{
+    width: 60%;
+    margin: 40px 40px 40px 40px;
+    padding: 45px;
+    margin-left:20%;
+    border: 3px solid rgb(134, 200, 226);
+}
+.bodyBorder h3,
+.bodyBorder h4 {
+    padding-top: 10px;
+
+}
+.bodyBorder h4 {
+    padding-bottom: 15px;
+}
+
+
+.historyLink {
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(134, 200, 226);
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.historyLink:hover {
+    color: rgb(134, 200, 226);
+    cursor: pointer;
+}
